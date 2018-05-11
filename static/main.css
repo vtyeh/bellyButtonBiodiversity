@@ -1,0 +1,34 @@
+.jumbotron {
+	color: #6d5f4a;
+	font-family: Garamond;
+	background-image: url("bellybuttonbiodiversity.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: 70px;
+
+}
+
+#metaPanel {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: #f9f6bb;
+	background-color: #82ada0;
+	color: #ffe272;
+	letter-spacing: 2px;
+}
+
+#metaPanel .panel-header {
+	text-align: center;
+}
+
+#selDataset {
+	padding: 7px;
+	color: black;
+}
+
+#samplePanel {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	color: #ffe272;
+	background-color: #c6bfa5;
+}

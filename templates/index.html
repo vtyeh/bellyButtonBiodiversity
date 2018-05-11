@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Belly-ve it!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Belly Button Biodiversity</h1> 
+        <p>Use the interactive charts below to explore!</p> 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="panel panel-default" id="samplePanel">
+                    <div class="panel-body">
+                        <h3>Select Sample:</h3>
+                        <select id="selDataset" onchange="getData(this.value)"></select>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="metaPanel">
+                    <div class="panel-header">
+                        <h3>Sample Data:</h3>
+                    </div>
+                    <div class="panel-body" id="displayMeta"></div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div id="pie"></div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div id="freqGauge" style="width: 450px; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="bubble"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/index.js" type="text/javascript"></script>
+</html>
